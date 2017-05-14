@@ -9,6 +9,6 @@ describe('ng2-hello-world App', () => {
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('hello, this is my first ng2 project!');
   });
 });
