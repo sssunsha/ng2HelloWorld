@@ -12,9 +12,7 @@ export class RedditHomeComponent implements OnInit {
   ngOnInit() {
   }
     
- addArticle(title:HTMLInputElement, link:HTMLInputElement): boolean {
+ addArticle(title:HTMLInputElement, link:HTMLInputElement): void {
     console.log(`[reddit-home.component] button clicked-> title=${title.value}, link=${link.value}`);
-    console.log(`${title}`);
-    return false;
   }
 }
