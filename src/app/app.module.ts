@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { UserItemComponent } from './user-item/user-item.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { RedditHomeComponent } from './reddit-home/reddit-home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloWorldComponent,
     UserItemComponent,
-    UserListComponent
+    UserListComponent,
+    RedditHomeComponent
   ],
   imports: [
     BrowserModule,

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hello, this is my first ng2 project!';
+  
+  addArticle(): boolean{
+    console.log(`[app.component] button clicked`);
+    return false;
+  }
 }
