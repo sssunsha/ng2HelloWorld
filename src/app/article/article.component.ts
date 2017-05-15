@@ -23,14 +23,14 @@ export class ArticleComponent implements OnInit {
   ngOnInit() {
   }
   
-  voteUp():boolean{
+  voteUp():boolean{ 
       this.article.voteUp();
-      return false;
+      return false; // the return should return false, otherwise the page would be refreshed
   }
   
   voteDown():boolean{
     this.article.voteDown();
-    return false;
+    return false; // the return should return false, otherwise the page would be refreshed
   }
 
 }
