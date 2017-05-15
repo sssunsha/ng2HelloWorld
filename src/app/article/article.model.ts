@@ -9,11 +9,13 @@ export class Article {
         this.votes = v || 0;
     }
 
-    voteUp(): void{
+    voteUp(): boolean{
         this.votes += 1;
+        return false;
     }
 
-    voteDown(): void{
+    voteDown(): boolean{
         this.votes -= 1;
+        return false;
     }
 }
