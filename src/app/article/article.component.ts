@@ -23,4 +23,17 @@ export class ArticleComponent implements OnInit {
   ngOnInit() {
   }
 
+  addArticle(t:string, l:string): boolean{
+    this.articles.forEach(element => {
+      if(element.title === t){
+        element.link = l;
+        return false;
+      }
+    });
+
+    var newArticle:Article = new Article(t, l, 10);
+    this.articles.push(newArticle);
+    return false;
+  }
+
 }
